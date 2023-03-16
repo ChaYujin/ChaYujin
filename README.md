@@ -5,7 +5,6 @@
 ▪ 더 좋은 코드가 무엇인지 항상 고민합니다.
 </p>
 <br>
-<br>
 <h3 align="center">🔨 My skills 🔨</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/-JAVA-orange"/>&nbsp
@@ -14,6 +13,7 @@
   <img src="https://img.shields.io/badge/-MySQL-navy"/>&nbsp
 </p>
 <br>
-<br>
 <h3 align="center">🧩 My Github 🧩</h3>
-<img align="center" src="https://github.com/ChaYujin/ChaYujin/blob/output/github-contribution-grid-snake.svg" />
+<p align="center">
+<img src="https://github.com/ChaYujin/ChaYujin/blob/output/github-contribution-grid-snake.svg" />
+</p>
