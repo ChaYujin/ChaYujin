@@ -9,3 +9,4 @@
 <br>
 <br>
 <h3 align="center">🧩 My Github 🧩</h3>
+![snake gif](https://github.com/ChaYujin/ChaYujin/blob/output/github-contribution-grid-snake.svg)
