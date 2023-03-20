@@ -4,6 +4,30 @@
 ▪ 동료와 적극적인 커뮤니케이션을 좋아합니다.<br>
 ▪ 더 나은 코드, 더 좋은 코드를 항상 고민합니다.
 </p>
+
+``` java
+package my.introduction.domain;
+
+@Builder
+class Person extends Developer {
+    String name;
+}
+
+public class Main() {
+    public static void main(String[] args) {
+    
+        Person yujin = Person.builder()
+                .name("차유진")
+                .developmentFields({"Back-end"})
+                .backendSkills({Java, Spring, JPA, MyBatis, Junit55️, Mockito, Gradle})
+                .devOpsSkills({Ubuntu, CentOS, Jenkins, Mysql})
+                .collaborationTools({Slack, Notion, Git, Intellij})
+                .build();
+        introduce(yujin);
+    }
+}
+```
+
 <br>
 <h3 align="center">🔨 My skills 🔨</h3>
 <p align="center">
