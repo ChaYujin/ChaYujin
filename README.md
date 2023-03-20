@@ -20,7 +20,7 @@ public class Main() {
                 .name("차유진")
                 .developmentFields({"Back-end"})
                 .backendSkills({Java, Spring, JPA, MyBatis, Junit55️, Mockito, Gradle})
-                .devOpsSkills({Ubuntu, CentOS, Jenkins, Mysql})
+                .devOpsSkills({CentOS, Mysql, Jenkins, NCP})
                 .collaborationTools({Slack, Notion, Git, Intellij})
                 .build();
         introduce(yujin);
