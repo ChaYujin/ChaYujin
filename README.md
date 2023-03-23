@@ -19,7 +19,7 @@ public class Main() {
         Person yujin = Person.builder()
                 .name("차유진")
                 .developmentFields({"Back-end"})
-                .backendSkills({Java, Spring, JPA, MyBatis, Junit55️, Mockito, Gradle})
+                .backendSkills({Java, Spring, JPA, MyBatis, Junit5️, Mockito, Gradle})
                 .devOpsSkills({CentOS, Mysql, Jenkins, NCP})
                 .collaborationTools({Slack, Notion, Git, Intellij})
                 .build();
