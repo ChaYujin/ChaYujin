@@ -23,6 +23,7 @@ public class Main() {
                 .devOpsSkills({CentOS, Mysql, Jenkins, NCP})
                 .collaborationTools({Slack, Notion, Git, Intellij})
                 .build();
+                
         introduce(yujin);
     }
 }
