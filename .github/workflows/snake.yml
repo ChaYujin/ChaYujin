@@ -24,7 +24,7 @@ jobs:
 
       # 뱀 생성
       - name: generate github-contribution-grid-snake.svg
-        uses: Platane/snk/svg-only@v2
+        uses: milaabl/snk-fix-build-error/svg-only@main
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
