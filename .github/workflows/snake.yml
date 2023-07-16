@@ -11,36 +11,30 @@ on:
 
   # 자동으로 Action이 실행되도록 함
   workflow_dispatch:
+  
+push:
+  branches:
+    - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
+      - name: generate github-contribution-grid-snake.svg
       # 뱀 생성
-      - uses: Platane/snk@v2
+      - uses: Platane/snk/svg-only@v2
         with:
-          github_user_name: ${{github.repository_owner}}
+          github_user_name: ${{ github.repository_owner }}
           # output branch에 gif, svg를 각각 생성
-          outputs : |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-          
-      - run: git status
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       # 변경사항 push
       - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
-          force: true
-
-      - uses: crazy-max/ghaction-github-pages@v2.1.3
+        uses: crazy-max/ghaction-github-pages@3.1.0
         with:
           target_branch: output
           build_dir: dist
-        env:
+        env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
