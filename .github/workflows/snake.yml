@@ -33,10 +33,10 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       # 변경사항 push
-      - name: Push changes
-        uses: crazy-max/ghaction-github-pages@3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Push changes
+#         uses: crazy-max/ghaction-github-pages@3.1.0
+#         with:
+#           target_branch: output
+#           build_dir: dist
+#         env: 
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
