@@ -24,7 +24,7 @@ jobs:
     timeout-minutes: 10
     
     steps:
-      - uses: actions/checkout@v2
+      #- uses: actions/checkout@v2
 
       # 뱀 생성
       - name: generate github-contribution-grid-snake.svg
