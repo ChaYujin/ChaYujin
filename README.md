@@ -8,19 +8,14 @@
 ``` java
 package my.introduction.domain;
 
-@Builder
-class Person extends Developer {
-    String name;
-}
-
 public class Main() {
     public static void main(String[] args) {
     
-        Person yujin = Person.builder()
+        Developer yujin = Developer.builder()
                 .name("차유진")
                 .developmentFields({"Back-end"})
                 .backendSkills({Java, Spring, JPA, MyBatis, Junit5️, Mockito, Gradle})
-                .devOpsSkills({CentOS, Mysql, Jenkins, NCP})
+                .devOpsSkills({Mysql, Jenkins, NCP})
                 .collaborationTools({Slack, Notion, Git, Intellij})
                 .build();
                 
